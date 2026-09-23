@@ -1,0 +1,115 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #e5edf8;
+  background: #09111d;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #09111d 0%, #101b2a 100%);
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+}
+
+.app-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #7bd4ff;
+  font-size: 0.72rem;
+}
+
+h1 {
+  margin: 0.2rem 0 0;
+  font-size: 2.4rem;
+}
+
+.primary-button {
+  background: #7bd4ff;
+  color: #071320;
+  font-weight: 700;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.summary-card, .table-panel {
+  background: rgba(16, 27, 42, 0.86);
+  border: 1px solid rgba(123, 212, 255, 0.15);
+  border-radius: 14px;
+  padding: 1.2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.summary-card span {
+  display: block;
+  color: #9fb3c8;
+  font-size: 0.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.summary-card strong {
+  font-size: 2rem;
+}
+
+.warning strong { color: #ffcf70; }
+.success strong { color: #79f7b1; }
+
+.table-panel h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.85rem 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: left;
+}
+
+th {
+  color: #8fb0d1;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.band {
+  display: inline-block;
+  padding: 0.3rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.band.high { background: rgba(255, 103, 103, 0.15); color: #ff8d8d; }
+.band.medium { background: rgba(255, 207, 112, 0.14); color: #ffcf70; }
+.band.low { background: rgba(121, 247, 177, 0.14); color: #79f7b1; }
